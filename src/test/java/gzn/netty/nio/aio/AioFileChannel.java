@@ -23,7 +23,7 @@ public class AioFileChannel {
             log.debug("read begin...");
             channel.read(buffer, 0, buffer, new CompletionHandler<Integer, ByteBuffer>() {
                 @Override // read 成功
-                public void completed(Integer result, ByteBuffer attachment) {
+                public void completed(Integer result,  ByteBuffer attachment) {
                     log.debug("read completed...{}", result);
                     attachment.flip();
                     debugAll(attachment);

@@ -15,6 +15,7 @@ public class ChatResponseMessage extends AbstractResponseMessage {
     }
 
     public ChatResponseMessage(String from, String content) {
+        super(true,"发送成功");
         this.from = from;
         this.content = content;
     }

@@ -1,7 +1,7 @@
 package gzn.netty.advance.protocol;
 
-import gzn.netty.chatRoom.message.LoginRequestMessage;
-import gzn.netty.chatRoom.protocol.MessageCodec;
+import gzn.netty.common.message.LoginRequestMessage;
+import gzn.netty.common.protocol.MessageCodec;
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.ByteBufAllocator;
 import io.netty.channel.embedded.EmbeddedChannel;

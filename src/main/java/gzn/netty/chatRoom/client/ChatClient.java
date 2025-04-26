@@ -1,9 +1,8 @@
 package gzn.netty.chatRoom.client;
 
-import gzn.netty.chatRoom.message.*;
-import gzn.netty.chatRoom.protocol.MessageCodecSharable;
-import gzn.netty.chatRoom.protocol.ProtocolFrameDecoder;
-import gzn.netty.chatRoom.server.handler.LoginRequestMessageHandler;
+import gzn.netty.common.message.*;
+import gzn.netty.common.protocol.MessageCodecSharable;
+import gzn.netty.common.protocol.ProtocolFrameDecoder;
 import io.netty.bootstrap.Bootstrap;
 import io.netty.channel.*;
 import io.netty.channel.nio.NioEventLoopGroup;
@@ -38,6 +37,7 @@ public class ChatClient {
         try {
             Bootstrap bootstrap = new Bootstrap();
             bootstrap.group(group);
+            bootstrap.option(ChannelOption.CONNECT_TIMEOUT_MILLIS, 300);
             bootstrap.channel(NioSocketChannel.class);
             bootstrap.handler(new ChannelInitializer<SocketChannel>() {
                 @Override

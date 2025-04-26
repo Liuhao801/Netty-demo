@@ -1,7 +1,7 @@
 package gzn.netty.chatRoom.server.handler;
 
-import gzn.netty.chatRoom.message.ChatRequestMessage;
-import gzn.netty.chatRoom.message.ChatResponseMessage;
+import gzn.netty.common.message.ChatRequestMessage;
+import gzn.netty.common.message.ChatResponseMessage;
 import gzn.netty.chatRoom.server.session.SessionFactory;
 import io.netty.channel.Channel;
 import io.netty.channel.ChannelHandler;

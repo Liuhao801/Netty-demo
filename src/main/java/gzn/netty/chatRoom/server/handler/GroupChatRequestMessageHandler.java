@@ -1,10 +1,9 @@
 package gzn.netty.chatRoom.server.handler;
 
-import gzn.netty.chatRoom.message.GroupChatRequestMessage;
-import gzn.netty.chatRoom.message.GroupChatResponseMessage;
+import gzn.netty.common.message.GroupChatRequestMessage;
+import gzn.netty.common.message.GroupChatResponseMessage;
 import gzn.netty.chatRoom.server.session.GroupSession;
 import gzn.netty.chatRoom.server.session.GroupSessionFactory;
-import gzn.netty.chatRoom.server.session.SessionFactory;
 import io.netty.channel.Channel;
 import io.netty.channel.ChannelHandler;
 import io.netty.channel.ChannelHandlerContext;

@@ -1,7 +1,7 @@
 package gzn.netty.chatRoom.server.handler;
 
-import gzn.netty.chatRoom.message.GroupJoinResponseMessage;
-import gzn.netty.chatRoom.message.GroupQuitRequestMessage;
+import gzn.netty.common.message.GroupJoinResponseMessage;
+import gzn.netty.common.message.GroupQuitRequestMessage;
 import gzn.netty.chatRoom.server.session.Group;
 import gzn.netty.chatRoom.server.session.GroupSessionFactory;
 import io.netty.channel.ChannelHandler;

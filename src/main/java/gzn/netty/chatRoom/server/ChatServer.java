@@ -1,7 +1,7 @@
 package gzn.netty.chatRoom.server;
 
-import gzn.netty.chatRoom.protocol.MessageCodecSharable;
-import gzn.netty.chatRoom.protocol.ProtocolFrameDecoder;
+import gzn.netty.common.protocol.MessageCodecSharable;
+import gzn.netty.common.protocol.ProtocolFrameDecoder;
 import gzn.netty.chatRoom.server.handler.*;
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.Channel;
@@ -11,7 +11,6 @@ import io.netty.channel.ChannelInitializer;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
-import io.netty.handler.codec.LengthFieldBasedFrameDecoder;
 import io.netty.handler.logging.LogLevel;
 import io.netty.handler.logging.LoggingHandler;
 import io.netty.handler.timeout.IdleState;
